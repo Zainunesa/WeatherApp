@@ -1,0 +1,81 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  text-align: center;
+  /* Background color */
+  background-color: #f0f8ff;
+  color: #333;
+  background-image: url("9444.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.container {
+  /* Thickness and space around the text and buttons */
+  padding: 20px;
+  background: rgba(48, 37, 132, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 200px auto;
+}
+
+input {
+  width: 70%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+button {
+  padding: 10px 20px;
+  background: #05407f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #022d5a;
+}
+
+#data {
+  margin-top: 20px;
+}
+
+/* Bird styling */
+.bird {
+  width: 50px;
+  height: 50px;
+  background-image: url("pngfind.com-birds-png-597199.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 20%;
+  left: -60px;
+  animation: fly-across 8s linear infinite; /* Infinite flying animation */
+}
+
+/* Animation for flying across the screen */
+@keyframes fly-across {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  25% {
+    transform: translateX(25vw) translateY(-40px);
+  }
+  50% {
+    transform: translateX(50vw) translateY(20px);
+  }
+  75% {
+    transform: translateX(75vw) translateY(-20px);
+  }
+  100% {
+    transform: translateX(100vw) translateY(0);
+  }
+}
